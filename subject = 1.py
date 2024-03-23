@@ -123,9 +123,7 @@ def gen2():
   return cmd
 
 
-import pyperclip as p
-for i in range(1):
-  a = gen2()
-  p.copy(a)
-  print(a)
-  input("next")
+hm = open("hm.txt","w")
+for i in range(100):
+  hm.write(gen2()+"\n")
+hm.close()
